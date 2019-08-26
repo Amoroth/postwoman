@@ -8,7 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "test": "jest"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
@@ -16,7 +17,10 @@
     "vuex-persist": "^2.0.1"
   },
   "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "jest": "^24.9.0",
     "node-sass": "^4.12.0",
-    "sass-loader": "^7.3.1"
+    "sass-loader": "^7.3.1",
+    "vue-jest": "^4.0.0-0"
   }
 }
