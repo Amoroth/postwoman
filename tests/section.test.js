@@ -1,32 +1,25 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils'
-import Vuex from 'vuex'
+import { shallowMount } from '@vue/test-utils'
 import Section from '@/components/section.vue'
 
 let wrapper
-let state
-let store
-const localVue = createLocalVue()
-localVue.use(Vuex)
 
 beforeEach(() => {
-  state = {
-    postwoman: {
-      settings: {
-        DISABLE_FRAME_COLORS: false
-      }
-    }
-  }
-  store = new Vuex.Store({
-    state
-  })
-
   wrapper = shallowMount(Section, {
     propsData: { collapsed: false },
     slots: {
       default: '<div id="test">inserted element</div>'
     },
-    store,
-    localVue
+    mocks: {
+      $store: {
+        state: {
+          postwoman: {
+            settings: {
+              DISABLE_FRAME_COLORS: false
+            }
+          }
+        }
+      }
+    }
   })
 })
 
