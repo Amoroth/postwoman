@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Swatch Component renders correctly 1`] = `
+<div
+  class="color"
+  data-color="green"
+>
+  <span
+    class="preview"
+    style="background-color: green;"
+  >
+    <svg
+      class="activeTick"
+      clip-rule="evenodd"
+      fill-rule="evenodd"
+      height="24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z"
+      />
+    </svg>
+  </span>
+  
+    example
+
+</div>
+`;
